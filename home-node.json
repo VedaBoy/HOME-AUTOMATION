@@ -1,0 +1,799 @@
+[
+    {
+        "id": "a63a5e3cba98c2a1",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8ee8febfc24b9080",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "712bdad3b8376539",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4a438928d5d2c76c",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "8ee8febfc24b9080",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bbe823d3e8279c0c",
+        "type": "ewelink-credentials"
+    },
+    {
+        "id": "8a40c226aff1fd90",
+        "type": "mqtt-broker",
+        "name": "g.vedardha Cayenne",
+        "broker": "mqtt.mydevices.com",
+        "port": "1883",
+        "clientid": "f11b9020-db1e-11ec-8da3-474359af83d7",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "22672da1ab18c6c0",
+        "type": "cayenne-client",
+        "broker": "8a40c226aff1fd90",
+        "username": "b5122690-9433-11ea-93bf-d33a96695544",
+        "clientid": "f11b9020-db1e-11ec-8da3-474359af83d7",
+        "name": "g.vedardha Cayenne MQTT"
+    },
+    {
+        "id": "5c3f5a3eaf6a3edd",
+        "type": "noraf-config",
+        "name": "Vedardha Gudapati",
+        "group": "",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "localexecution": true,
+        "structure": "JSH Test Home",
+        "storeStateInContext": false,
+        "disableValidationErrors": false
+    },
+    {
+        "id": "48c6d98f31e35617",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "19",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "8de44b3500187c3d",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "20",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "8208ac47b40cf1e6",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "26",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "c20d486db9ec0ef2",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "16",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "9c2b952fe7969fe4",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "13",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4bcc4a8657359c83",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "6",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a3221e5918a2e07e",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "5",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "26edc95fe6b694c9",
+        "type": "noraf-switch",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Bedroom light",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "false",
+        "onvalueType": "bool",
+        "offvalue": "true",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "a3221e5918a2e07e"
+            ]
+        ]
+    },
+    {
+        "id": "aef3367665221002",
+        "type": "noraf-switch",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Kitchen Light",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 380,
+        "wires": [
+            [
+                "48c6d98f31e35617"
+            ]
+        ]
+    },
+    {
+        "id": "85f25df83ad48863",
+        "type": "noraf-switch",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Vedu room Light",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 320,
+        "wires": [
+            [
+                "9c2b952fe7969fe4"
+            ]
+        ]
+    },
+    {
+        "id": "74ac93156c8eac8d",
+        "type": "noraf-switch",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Living room Light",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 260,
+        "wires": [
+            [
+                "4bcc4a8657359c83"
+            ]
+        ]
+    },
+    {
+        "id": "5527a3cfb2a878c6",
+        "type": "noraf-outlet",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Bathroom Exhaust Fan",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 620,
+        "wires": [
+            [
+                "3069b00b2d6c20cc"
+            ]
+        ]
+    },
+    {
+        "id": "88a2678d69f7f0c9",
+        "type": "noraf-outlet",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Geyser",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 380,
+        "y": 560,
+        "wires": [
+            [
+                "8de44b3500187c3d"
+            ]
+        ]
+    },
+    {
+        "id": "bedf5b9f3cf88ee5",
+        "type": "noraf-outlet",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Living Room AC",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 500,
+        "wires": [
+            [
+                "c20d486db9ec0ef2"
+            ]
+        ]
+    },
+    {
+        "id": "0e32989ea7d5c4d0",
+        "type": "noraf-outlet",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Bedroom AC",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 440,
+        "wires": [
+            [
+                "8208ac47b40cf1e6"
+            ]
+        ]
+    },
+    {
+        "id": "3069b00b2d6c20cc",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "21",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "7c399ad10af1a3b6",
+        "type": "cayenne actuator",
+        "z": "a63a5e3cba98c2a1",
+        "client": "22672da1ab18c6c0",
+        "qos": "0",
+        "name": "Bedroom Light Node",
+        "datatype": "",
+        "dataunit": "",
+        "channel": "1",
+        "datatypeEx": "switch",
+        "dataunitEx": "null1",
+        "valuetypeEx": "digital",
+        "x": 810,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc8b5e98f5a2da36",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "7",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "cc51f9d2d75ed5f5",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "8",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "65e7847dfb90f6b6",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "25",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "e275ae9a6812e713",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "12",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "2571318acd491f6f",
+        "type": "rpi-gpio in",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "24",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 390,
+        "y": 920,
+        "wires": [
+            [
+                "6cded83dbabdc3a4",
+                "65e7847dfb90f6b6",
+                "3069b00b2d6c20cc"
+            ]
+        ]
+    },
+    {
+        "id": "6cded83dbabdc3a4",
+        "type": "noraf-sensor",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Motion Sensor",
+        "roomhint": "",
+        "name": "",
+        "temperature": false,
+        "unit": "C",
+        "humidity": false,
+        "passthru": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "filter": false,
+        "sensorSupport": false,
+        "sensorType": "AirQuality",
+        "sensorStates": [],
+        "sensorStatesThatNotify": [],
+        "sensorNumeric": true,
+        "openCloseSupport": false,
+        "openCloseDiscrete": false,
+        "onOffSupport": true,
+        "x": 600,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "0035ad3edc38ca4e",
+        "type": "noraf-switch",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Living Room Fan",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 680,
+        "wires": [
+            [
+                "e275ae9a6812e713"
+            ]
+        ]
+    },
+    {
+        "id": "d54600fddd8776ae",
+        "type": "noraf-switch",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Vedu room Fan",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 740,
+        "wires": [
+            [
+                "bc8b5e98f5a2da36"
+            ]
+        ]
+    },
+    {
+        "id": "6da4338cc1313c3d",
+        "type": "noraf-switch",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Bathroom Light",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 860,
+        "wires": [
+            [
+                "65e7847dfb90f6b6"
+            ]
+        ]
+    },
+    {
+        "id": "dbbbe492b50f1f9e",
+        "type": "noraf-outlet",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Vedu room Ac",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 800,
+        "wires": [
+            [
+                "cc51f9d2d75ed5f5"
+            ]
+        ]
+    },
+    {
+        "id": "b43aeda662307e1a",
+        "type": "rpi-gpio out",
+        "z": "a63a5e3cba98c2a1",
+        "name": "",
+        "pin": "17",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 580,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "636a9cc7a487ec34",
+        "type": "noraf-outlet",
+        "z": "a63a5e3cba98c2a1",
+        "devicename": "Mains",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "5c3f5a3eaf6a3edd",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "b43aeda662307e1a"
+            ]
+        ]
+    }
+]
